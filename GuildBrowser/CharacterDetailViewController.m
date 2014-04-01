@@ -79,7 +79,6 @@
     } error:^(NSError *error) {
         [self setNetworkActivityIndicatorVisible:NO];
         [self configureItemViews:nil];
-        
         NSString *errorMessage = [NSString stringWithFormat:@"There was a problem loading detail info for %@",_character.name];
         UIAlertView *loadAlert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                             message:errorMessage
